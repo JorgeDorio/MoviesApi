@@ -53,18 +53,11 @@ dotnet build
 dotnet run
 ```
 
-The API will be available at http://localhost:<port>.
-
 ## Endpoints
-The following endpoints are available:
+You can see all endpoints in the docs:
 
 - GET /swagger - see the docs
-- GET /movie - retrieves all records from the movie table
-- GET /movie/{id} - retrieves a single record from the movie table with the specified id
-- POST /movie - adds a new record to the movie table
-- PUT /movie/{id} - updates the record with the specified id in the movie table
-- PATCH /movie/{id} - updates specified of the record with the specified id in the movie table
-- DELETE /movie/{id} - deletes the record with the specified id from the movie table
+
 
 That's it! You should now have a working C# Web API with CRUD operations and a MySQL database running in Docker.
 
