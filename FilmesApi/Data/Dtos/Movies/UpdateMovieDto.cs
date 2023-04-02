@@ -1,15 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MoviesApi.Data.Dtos;
+namespace MoviesApi.Data.Dtos.Movies;
 
-public class ReadMovieDto
+public class UpdateMovieDto
 {
-
+    [Required]
     public string Title { get; set; }
 
+    [Required]
     public string Description { get; set; }
 
+    [Required]
     public int Duration { get; set; }
-
-    public DateTime GetedAt { get; set; } = DateTime.Now;
 }

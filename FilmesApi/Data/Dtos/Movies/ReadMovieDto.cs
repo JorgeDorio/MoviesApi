@@ -1,18 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MoviesApi.Data.Dtos;
+namespace MoviesApi.Data.Dtos.Movies;
 
-public class CreateMovieDto
+public class ReadMovieDto
 {
-    [Required]
-    [StringLength(100)]
+    public int Id { get; set; }
+
     public string Title { get; set; }
 
-    [Required]
-    [StringLength(100)]
     public string Description { get; set; }
 
-    [Required]
-    [Range(70, 600)]
     public int Duration { get; set; }
+
+    public DateTime GetedAt { get; set; } = DateTime.Now;
 }
